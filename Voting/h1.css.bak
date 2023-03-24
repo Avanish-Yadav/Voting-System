@@ -1,0 +1,15 @@
+h1,h2{
+ text-align:center;
+ color:Green;
+ text-decoration:undrline;
+ border-style:solid;
+ border-width:6px;
+ }
+ h2{
+ text-align:center;
+ color:rgb(145,39,143);
+ text-decoration:undrline;
+ border-style:solid;
+ border-width:6px;
+ }
+ 

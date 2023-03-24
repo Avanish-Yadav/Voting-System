@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Welcome to admin page</title>
+</head>
+<body BACKGROUND="abc.jpg" >
+<br><b><h1>Uttar Pradesh Election</h1></b>
+
+<table border='2'cellspacing='2'cellpadding='5'width='600'heigt='200'>
+        <tr>
+         
+            <th>S.N.</th>
+            <th>PARTY</th>
+            <th>CANDIDATE</th>
+        </tr>
+       
+        <tr>
+         
+            <td>1</td>
+            <td><B><CENTER>BJP</CENTER></B></td>
+            <td><B>YOGI ADITYANATH</td>
+        </tr>
+
+         <tr>
+         
+            <td>2</td>
+            <td><B><CENTER>SP</CENTER></td>
+            <td><B>AKHILESH YADAV</td>
+        </tr>
+		
+		<tr>
+         
+            <td>3</td>
+            <td><B><CENTER>BSP</CENTER></td>
+            <td><B>SHUSHRI MAYAWATI DEVI</td>
+        </tr>
+		
+		<tr>
+         
+            <td>4</td>
+            <td><B><CENTER>CONGRESS</CENTER></td>
+            <td><B>PRIYANKA GANDHI</td>
+        </tr>
+       
+       </table>
+	   
+	   
+	    
+	   </br></br><a href=http://localhost:8888/Voting/homeconnect.jsp><font color="purple">UPLOAD VOTERS PROFILE</font>
+	   </br></br><a href=http://localhost:8888/Voting/resultpage.jsp><font color="purple">DISPLAY RESULT</font>
+	   
+	  
+    </ul>
+</body>
+</html>

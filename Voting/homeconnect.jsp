@@ -1,0 +1,49 @@
+
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+
+<html>
+    <head>
+	  <center><font size="5.5" color="green"><p><b>If you are already registered then ignore this page</font><br/><br/></p></center>
+    </head>
+    <body BACKGROUND="bulb.jpg">
+           <form name="f2" method="post" action="" >
+           Enter Voter Id..<br/>
+		   <input type="text" name="t3" required /><br/><br/>
+		     Enter Password<br/>
+			 <input type="password" name="t4" required /><br/>
+           <input type="submit" value="Register Here" name="b2" /></b> <br>
+          </form>  
+		
+		<%
+		if(request.getParameter("b2")!=null)
+		{
+			int gid=Integer.parseInt(request.getParameter("t3"));
+			String gpwd=request.getParameter("t4");
+		
+   Connection con;
+   Statement st;
+   Scanner sc=new Scanner(System.in);
+   
+  try{
+  	 Class.forName("oracle.jdbc.driver.OracleDriver");
+  	 String url="jdbc:oracle:thin:@localhost:1521:";
+     	con=DriverManager.getConnection(url,"system","oracle@1234");
+		
+		st=con.createStatement();
+        String sql="insert into voterpage values("+gid+",'"+gpwd+"',"+null+")";
+		int res=st.executeUpdate(sql);
+       if(res!=0)
+	      out.println("Successfully registered");   
+	  
+       con.close();
+    }catch(Exception e)
+   {
+	 out.println("Already Registered");
+   }
+	}
+		%>
+    
+   
+ </body>
+</html>
